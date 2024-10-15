@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="~/Content/mystyle.css"/>
+</head>
+<body>
+    <div class="sign-up">
+        <img src="~/img/usericon.png" />
+        <h1> Sign Up Now</h1>
+        <form>
+            <input type="email" class="input-box" placeholder="your email">
+            <input type="password" class="input-box" placeholder="your password">
+            <p><span><input type="checkbox" /></span>I agree to the terms of services</p>
+            <button type="button" class="signup-btn">Sign up</button>
+            <hr />
+            <p class="or">OR</p>
+            <button type="button" class="Facebook-btn">Login with Facebook</button>
+            <p>Do you have an account?<a href="#">Sign in</a></p>
+            @RenderBody()
+        </form>
+    </div>
+</body>
+</html>
